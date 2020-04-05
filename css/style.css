@@ -1,0 +1,66 @@
+/* ==== formatação padrão ==== */
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+
+	font-family: 'Oswald', sans-serif;
+
+	text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+
+    line-height: 1.2;
+    letter-spacing: 0em;    
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{background: rgba(0, 0, 0, 0.1);}
+
+/* ==== container | content ==== */
+.container{display: block; width: 100%; height: auto; margin: 0 auto;}
+.content-contador-95-800-0{display: block; margin: 0  auto; padding: 30px; width: 95%; max-width: 800px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;}
+.grid-center{display: flex; flex-wrap: wrap; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 100%;}
+.clear{clear: both;}
+
+.container h1{font-size: 2.6em; color: #333; font-weight: 700;}
+.container h1 strong{color: #608CD8; font-weight: 700;}
+.container p{color: #999; font-weight: 300;}
+hr{width: 20%; max-width:50px; border: 0.03em solid rgba(0, 0, 0, 0.1); margin:15px auto;}
+
+/* ==== bgs-color ==== */
+.bg-blue{background: #09f;}
+
+/* ==== contador ==== */
+#contador-data{display: block;}
+.contador-format-txt{
+    display: inline-block; 
+    /*background: rgba(0, 0, 0, 0.5);*/
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding:15px 10px; 
+    margin: 8px;
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+    color:  rgba(0, 0, 0, 0.4);
+    font-size: 3em;
+    font-weight: 700;
+}
+.contador-data-txt{color: rgba(0, 0, 0, 0.3); font-size: 0.3em;}
+.contador-dois-ponto{position: relative; color: rgba(0, 0, 0, 0.3); font-size: 1.2em; font-weight: 700; top:-25px;}
+
+.titulo-contator{font-size: 2em; color: #ccc; font-weight: 700; text-transform: uppercase; margin-top: 5px;}
+.txt-ultimas-vagas{font-size: 5em; color: #d12121; text-transform: uppercase; font-weight: 700; text-shadow: 1px 1px 1px #fff; margin-top: 15px;}
+
+
+/* ==== viewport ==== */
+@media(max-width: 992px){
+	.container h1{font-size: 2.2em;}
+	.contador-format-txt{padding:12px 8px; font-size: 2em;}
+	.contador-dois-ponto{top:-15px;}
+}
